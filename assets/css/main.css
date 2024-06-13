@@ -11,7 +11,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #313030; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #473d3a; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ff5821; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: rgba(27, 80, 118, 1); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
 
@@ -349,7 +349,6 @@ h6 {
 
 .footer .copyright {
   padding-top: 25px;
-  padding-bottom: 25px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -852,6 +851,11 @@ section,
   margin-bottom: 0;
 }
 
+.alt-services .service-item: {
+  width:300px;
+  height:300px;
+}
+
 .alt-services .service-item:hover .details h3 {
   color: var(--accent-color);
 }
@@ -867,80 +871,65 @@ section,
   --background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
 }
 
-.team .team-member {
-  background-color: var(--contrast-color);
-  box-shadow: 0px 2px 15px color-mix(in srgb, var(--default-color), transparent 90%);
-  overflow: hidden;
-  border-radius: 5px;
+
+.deliverables .team-intro {
+  background: rgba(27, 80, 118, 0.1);
+  padding: 20px;
+  border-left: 5px solid rgba(27, 80, 118, 1);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
-.team .team-member .member-img {
-  position: relative;
-  overflow: hidden;
+.deliverables .team-intro:hover {
+  transform: translateY(-5px);
 }
 
-.team .team-member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: color-mix(in srgb, var(--contrast-color), transparent 20%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .team-member .social a {
-  transition: color 0.3s;
-  color: var(--heading-color);
-  margin: 0 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .team-member .social a i {
-  line-height: 0;
-}
-
-.team .team-member .social a:hover {
-  color: var(--accent-color);
-}
-
-.team .team-member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .team-member .member-info {
-  padding: 25px 15px;
-  text-align: center;
-}
-
-.team .team-member .member-info h4 {
+.deliverables .team-intro h3 {
+  color: rgba(27, 80, 118, 1);
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 10px;
 }
 
-.team .team-member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+.deliverables .team-intro p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+.deliverables .carousel{
+  max-width: 75%; /* Set the carousel to half width */
+  margin: 0 auto; /* Center the carousel */
 }
 
-.team .team-member:hover .social {
-  opacity: 1;
+.deliverables .carousel-inner img {
+  width: 100%; /* Ensure images take up full width of carousel */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
 }
+
+.deliverables .carousel-control-prev,
+.deliverables .carousel-control-next {
+  width: 5%;
+}
+
+.deliverables .carousel-control-prev-icon,
+.deliverables .carousel-control-next-icon {
+  background-color: rgba(27, 80, 118, 1);
+  border-radius: 50%;
+  padding: 10px;
+}
+.mt-6{
+  margin-top: 150px;
+}
+
+@media (max-width: 600px) {
+
+.mt-6{
+  margin-top: 20px;
+}
+
+  }
+
