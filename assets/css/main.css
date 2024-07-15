@@ -634,7 +634,7 @@ section,
 
 .hero2 h3 {
   color: #333;
-  font-size: 36px;
+  font-size: 33px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -654,12 +654,13 @@ section,
 
 .hero2 p {
   color: #555;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
+    text-align: justify;
 }
 
 .hero2 img {
-  width: 100%;
+  width: 85%;
   height: auto;
   border-radius: 10px;
   transition: filter 0.3s ease, transform 0.3s ease;

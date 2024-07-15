@@ -26,7 +26,60 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .about{
+      background-color: white;
+    }
+.about .section-title {
+  text-align: center;
+}
+.about .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+/*  padding-bottom: 0.2rem;*/
+}
+.about .section-title h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .section-title p {
+  font-size: 1.2rem;
+  color: #666;
+  font-style: italic;
 
+}
+.about .content {
+  padding: 0 2rem;
+}
+.about .content p {
+  font-size: 1rem;
+  line-height: 1.8;
+    text-align: justify;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+.about img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.borderimg {
+  border: 2px solid #ddd;
+  padding: 5px;
+  background-color: #fff;
+}d-color: #fff;
+}
+</style>
 </head>
 
 <body class="index-page">
@@ -72,10 +125,30 @@
   </div>
 </section>
 
+<section id="about" class="about section">
+  <div class="section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p>Primate Portal</p>
+  </div><!-- End Section Title -->
 
-
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img src="assets/img/abou2.jpg" class="img-fluid d-block mx-auto borderimg rounded shadow-lg" alt="Primate Portal">
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1 content">
+        <p class="text-justify">
+          The Primate Portal is a collaborative project by a group of scientists studying the origins and nature of thought. The Portal is located at the Seneca Park Zoo where we have trained a troop of Olive Baboons (Papio Anubis) to solve cognitive problems using touchscreen computers. All of the baboons' responses are recorded and the sessions are videotaped.
+        </p>
+        <p class="text-justify">
+          Artificial Intelligence (a convolutional neural network) is used to identify each baboon for individualized cognitive training and testing. The Portal offers open access to data, code, and video of primates who are solving cognitive problems, with the goal that students everywhere can study animal minds. Research at The Portal focuses on the concepts, logic, and abstract reasoning of primates, though we are always open to new ideas. Education is a priority at The Portal. We are developing tools to facilitate data visualization and analysis of our data for younger students. The goal is that data from the Primate Portal can be used in elementary and high schools to facilitate data literacy, develop student science and coding projects, and inspire scientific discovery.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="hero2 px-4">
-  <div class="content row gy-4">
+  <div class="content row gy-4 px-4">
     <div class="col-lg-6 d-flex align-items-stretch">
       <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
         <h3>What is Project 3Sigma?</h3>
@@ -86,7 +159,7 @@
     </div>
 
     <div class="col-lg-6 d-flex align-items-stretch">
-      <img src="assets/img/monkey1.jpg" class="img-fluid d-block mx-auto" alt="Monkey Image">
+      <img src="assets/img/monkey1.jpg" class="img-fluid d-block mx-auto monkyimg" alt="Monkey Image">
     </div>
   </div>
 </section>
